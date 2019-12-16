@@ -41,7 +41,7 @@ class Index extends Component {
     return (
       <View className='index'>
         <AtAvatar circle size='large' openData={opendata}></AtAvatar>
-        <View className='description'><Text decode>&emsp;欢迎，进入小程序您可以学习到一些有关富文本Quill和量化交易相关知识。</Text></View>
+        <View className='description'><Text decode>&emsp;欢迎进入量化交易小程序！</Text></View>
         <Button type='primary' onClick={this.handleButtonClick.bind(this)}>点击进入</Button>
       </View>
     )
