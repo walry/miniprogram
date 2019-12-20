@@ -21,8 +21,9 @@ class App extends Component {
   config = {
     pages: [
       'pages/index/index',
-      'pages/pqt/pqt',
-      'pages/quill/quill'
+      'pages/home/home',
+      'pages/aip/aip',
+      'pages/hl/hl'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -30,25 +31,25 @@ class App extends Component {
       navigationBarTitleText: '宇文兰孜',
       navigationBarTextStyle: 'white'
     },
-    tabBar:{
-      backgroundColor: '#4A7AA6',
-      selectedColor: '#fff',
-      color: '#CD89BB',
-      list:[
-        {
-          pagePath: 'pages/quill/quill',
-          text:'富文本',
-          iconPath: './assets/icon/rts.png',
-          selectedIconPath: './assets/icon/rt.png'
-        },
-        {
-          pagePath: 'pages/pqt/pqt',
-          text: '量化交易',
-          iconPath: './assets/icon/quans.png',
-          selectedIconPath: './assets/icon/quan.png'
-        }
-      ]
-    }
+    // tabBar:{
+    //   backgroundColor: '#4A7AA6',
+    //   selectedColor: '#fff',
+    //   color: '#CD89BB',
+    //   list:[
+    //     {
+    //       pagePath: 'pages/quill/quill',
+    //       text:'富文本',
+    //       iconPath: './assets/icon/rts.png',
+    //       selectedIconPath: './assets/icon/rt.png'
+    //     },
+    //     {
+    //       pagePath: 'pages/pqt/pqt',
+    //       text: '量化交易',
+    //       iconPath: './assets/icon/quans.png',
+    //       selectedIconPath: './assets/icon/quan.png'
+    //     }
+    //   ]
+    // }
   }
 
   componentDidMount () {}
