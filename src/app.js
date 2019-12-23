@@ -20,36 +20,19 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/video/video',
       'pages/index/index',
       'pages/home/home',
       'pages/aip/aip',
-      'pages/hl/hl'
+      'pages/hl/hl',
+      // 'pages/video/video'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#4A7AA6',
       navigationBarTitleText: '宇文兰孜',
       navigationBarTextStyle: 'white'
-    },
-    // tabBar:{
-    //   backgroundColor: '#4A7AA6',
-    //   selectedColor: '#fff',
-    //   color: '#CD89BB',
-    //   list:[
-    //     {
-    //       pagePath: 'pages/quill/quill',
-    //       text:'富文本',
-    //       iconPath: './assets/icon/rts.png',
-    //       selectedIconPath: './assets/icon/rt.png'
-    //     },
-    //     {
-    //       pagePath: 'pages/pqt/pqt',
-    //       text: '量化交易',
-    //       iconPath: './assets/icon/quans.png',
-    //       selectedIconPath: './assets/icon/quan.png'
-    //     }
-    //   ]
-    // }
+    }
   }
 
   componentDidMount () {}

@@ -3,6 +3,7 @@ import { View } from '@tarojs/components'
 import { AtGrid, AtCard } from "taro-ui"
 import Dingtou from "../../assets/icon/dingtou.png"
 import Fangdai from "../../assets/icon/fangdai.png"
+import Video from "../../assets/icon/video.png"
 
 import './home.scss'
 
@@ -16,13 +17,14 @@ class Pqt extends Taro.Component {
         this.state = {
             f: [
                 { image: Dingtou, value: '定投复利' },
-                { image: Fangdai, value: '房贷还款' }
+                { image: Fangdai, value: '房贷还款' },
+                { image: Video, value: '在线课程' }
             ]
         }
     }
     handButtonClick(item,index){
         console.log(item,index)
-        const group = [ '/pages/aip/aip', '/pages/hl/hl' ]
+        const group = [ '/pages/aip/aip', '/pages/hl/hl', '/pages/video/video' ]
         Taro.navigateTo({
             url: group[index]
         })
