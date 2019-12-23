@@ -1,6 +1,5 @@
 import Taro from '@tarojs/taro'
 import { View, Video } from '@tarojs/components'
-import Poster from "../../assets/icon/poster.png"
 
 import './video.scss'
 
