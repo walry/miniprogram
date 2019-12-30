@@ -12,6 +12,7 @@ class VideoCourse extends Taro.Component {
                     src="https://www.runoob.com/try/demo_source/mov_bbb.mp4"
                     objectFit="cover"
                 />
+                <Text>课程还在开发中，请耐心等待！</Text>
             </View>
         )
     }
