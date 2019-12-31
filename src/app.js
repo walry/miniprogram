@@ -3,6 +3,7 @@ import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
 
 import counterStore from './store/counter'
+import courseStore from './store/course'
 
 import './app.scss'
 
@@ -13,7 +14,8 @@ import './app.scss'
 // }
 
 const store = {
-  counterStore
+  counterStore,
+  courseStore
 }
 
 class App extends Component {
@@ -25,7 +27,8 @@ class App extends Component {
       'pages/aip/aip',
       'pages/hl/hl',
       'pages/video/video',
-      'pages/recomend/recomend'
+      'pages/recomend/recomend',
+      'pages/recomend/detail'
     ],
     window: {
       backgroundTextStyle: 'light',
