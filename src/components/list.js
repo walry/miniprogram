@@ -22,12 +22,13 @@ export default class List extends Taro.Component {
                 </View>
                 <View className="item">
                     <Text className="title">{course.title}</Text>
-                    <Text className="from">{course.from}</Text>
-                </View>
-                <View className="item">
-                    <Text className="price">{course.price}</Text>
                     <Text className="class-hour">{course.classHour}</Text>
+                    
                 </View>
+                {/* <View className="item">
+                    <Text className="price">{course.price}</Text>
+                    <Text className="from">{course.from}</Text>
+                </View> */}
                 <View className="center-item">
                     <Image className="right" src={Right} />
                 </View>

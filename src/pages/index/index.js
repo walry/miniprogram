@@ -1,13 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
-import { observer, inject } from '@tarojs/mobx'
 import { AtAvatar } from 'taro-ui'
 
 import './index.scss'
-
-
-@inject('counterStore')
-@observer
 
 class Index extends Component {
 

@@ -1,6 +1,7 @@
 @import "~taro-ui/dist/style/components/article.scss";
+@import "~taro-ui/dist/style/components/card.scss";
 
-$headMargin: 15px 0;
+$headMargin: 65px auto;
 .course-detail{
     margin: 10px;
     .head{
@@ -21,7 +22,14 @@ $headMargin: 15px 0;
             border-radius: 90px;   
         }
     }
-
+    .company-label{
+        background-color: rgb(89, 187, 97);
+        font-size: 32px;
+        border-radius: 5px;
+        margin: $headMargin;
+        color: #fff;
+        padding: 15px;
+    }
     .catalog{
         display: flex;
         flex-direction: column;
@@ -40,14 +48,23 @@ $headMargin: 15px 0;
 
     .team-content{
         display: flex;
-        justify-content: space-around;
-        align-items: baseline;
+        justify-content: space-between;
         margin: $headMargin;
         .feature{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+        }
+    }
+
+    .buy-card{
+        margin: $headMargin;
+        .link-input{
+            margin: 15px;
+            background-color: #cacaca;
+            color: #db681be1;
+            padding: 15px;
         }
     }
 }

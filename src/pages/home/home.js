@@ -3,8 +3,7 @@ import { View } from '@tarojs/components'
 import { AtGrid } from "taro-ui"
 import Dingtou from "../../assets/icon/dingtou.png"
 import Fangdai from "../../assets/icon/fangdai.png"
-import Video from "../../assets/icon/video.png"
-import Recomend from "../../assets/icon/recomend.png"
+import CourseIcon from "../../assets/icon/video.png"
 
 import './home.scss'
 
@@ -19,13 +18,12 @@ class Pqt extends Taro.Component {
             f: [
                 { image: Dingtou, value: '定投复利' },
                 { image: Fangdai, value: '房贷还款' },
-                { image: Video, value: '在线课程' },
-                { image: Recomend, value: '推荐课程' }
+                { image: CourseIcon, value: '课程推荐' }
             ]
         }
     }
     handButtonClick(item,index){
-        const group = [ '/pages/aip/aip', '/pages/hl/hl', '/pages/video/video','/pages/recomend/recomend' ]
+        const group = [ '/pages/aip/aip', '/pages/hl/hl','/pages/recomend/recomend' ]
         Taro.navigateTo({
             url: group[index]
         })

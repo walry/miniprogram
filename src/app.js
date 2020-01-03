@@ -1,8 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
-
-import counterStore from './store/counter'
 import courseStore from './store/course'
 
 import './app.scss'
@@ -14,7 +12,6 @@ import './app.scss'
 // }
 
 const store = {
-  counterStore,
   courseStore
 }
 
@@ -26,7 +23,6 @@ class App extends Component {
       'pages/home/home',
       'pages/aip/aip',
       'pages/hl/hl',
-      'pages/video/video',
       'pages/recomend/recomend',
       'pages/recomend/detail'
     ],
