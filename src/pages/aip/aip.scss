@@ -1,0 +1,32 @@
+@import "~taro-ui/dist/style/components/message.scss";
+.aip{
+    padding: 10px;;
+    .form{
+        flex-direction: column;
+        justify-content: center;
+        .input{
+            margin: 30px 0;
+            font-size: 32px;
+            background-color: #F2F2F2;
+            padding-left: 25px;
+        }
+        .button{
+            margin: 20px 0;
+        }
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+        .label{
+            font-size: 32px;
+            margin: 30px 0;
+            .number{
+                color: #e02727;
+                font-size: 36px;
+                margin: 0 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/message.scss";
+
+.hl{
+    padding: 0 20px;
+    .button{
+        margin: 20px 0;
+    }
+
+    .radio{
+        display: flex;
+        justify-content: space-around;
+        margin: 25px 0;
+    }
+    .result{
+
+        .info{
+            padding: 0 20px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: 1px solid #CDF4FF;
+            border-radius: 5px;
+
+            .item-label{
+
+                .item-number{
+                    font-size: 38px;
+                    color: #61C9B5;
+                }
+            }
+        }
+
+        .table{
+            margin-top: 20px;
+            border: 1px solid #CDF4FF;
+            border-radius: 5px;
+            .tr{
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
