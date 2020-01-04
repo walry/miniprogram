@@ -23,16 +23,16 @@ class Aip extends Taro.Component {
         }
     }
 
-    onAmountChange(val){
-        this.setState({ amount: val })
+    onAmountChange(value){
+        this.setState({ amount: value })
     }
 
-    onRateChange(val){
-        this.setState({ rate: val })
+    onRateChange(value){
+        this.setState({ rate: value })
     }
 
-    onPeriodChange(val){
-        this.setState({ period: val })
+    onPeriodChange(value){
+        this.setState({ period: value })
     }
 
     AtMessage(type,msg){
@@ -89,36 +89,34 @@ class Aip extends Taro.Component {
             <View className='aip'>
                 <AtMessage />
                 <View className="form">
-
-                <AtInput
-                    name='amount'
-                    title='定投金额'
-                    type='digit'
-                    placeholder='请输入每月定投金额（元）'
-                    value={this.state.amount}
-                    onChange={this.onAmountChange.bind(this)}
-                />
-                <AtInput
-                    name='rate'
-                    title='年收益率'
-                    type='digit'
-                    placeholder='请输入定投年收益率（%）'
-                    value={this.state.rate}
-                    onChange={this.onRateChange.bind(this)}
-                />
-                <AtInput
-                    name='period'
-                    title='定投年限'
-                    type='digit'
-                    placeholder='请输入定投年限（年）'
-                    value={this.state.period}
-                    onChange={this.onPeriodChange.bind(this)}
-                />
-
-                <View>
-                    <Button className="button" type="primary" onClick={this.handleCalc.bind(this)}>计算</Button>
-                    <Button className="button" onClick={this.handleClear.bind(this)}>清空</Button>
-                </View>
+                    <AtInput
+                        name='amount'
+                        title='定投金额'
+                        type='digit'
+                        placeholder='请输入每月定投金额（元）'
+                        value={this.state.amount}
+                        onChange={this.onAmountChange.bind(this)}
+                    />
+                    <AtInput
+                        name='rate'
+                        title='年收益率'
+                        type='digit'
+                        placeholder='请输入定投年收益率（%）'
+                        value={this.state.rate}
+                        onChange={this.onRateChange.bind(this)}
+                    />
+                    <AtInput
+                        name='period'
+                        title='定投年限'
+                        type='number'
+                        placeholder='请输入定投年限（年）'
+                        value={this.state.period}
+                        onChange={this.onPeriodChange.bind(this)}
+                    />
+                    <View>
+                        <Button className="button" type="primary" onClick={this.handleCalc.bind(this)}>计算</Button>
+                        <Button className="button" onClick={this.handleClear.bind(this)}>清空</Button>
+                    </View>
                 </View>
                 {
                     showResultEnable && (
