@@ -37,7 +37,6 @@ class Hl extends Taro.Component {
         this.setState({ rate: value })
     }
 
-
     handleClearButton(){
         this.setState({
             principle: '',

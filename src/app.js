@@ -1,8 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
-
-import counterStore from './store/counter'
+import courseStore from './store/course'
 
 import './app.scss'
 
@@ -13,7 +12,7 @@ import './app.scss'
 // }
 
 const store = {
-  counterStore
+  courseStore
 }
 
 class App extends Component {
@@ -23,13 +22,20 @@ class App extends Component {
       'pages/index/index',
       'pages/home/home',
       'pages/aip/aip',
+<<<<<<< HEAD
       'pages/hl/hl'
+=======
+      'pages/hl/hl',
+      'pages/recomend/recomend',
+      'pages/recomend/detail'
+>>>>>>> master
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#4A7AA6',
       navigationBarTitleText: '宇文兰孜',
       navigationBarTextStyle: 'white'
+<<<<<<< HEAD
     },
     // tabBar:{
     //   backgroundColor: '#4A7AA6',
@@ -50,6 +56,9 @@ class App extends Component {
     //     }
     //   ]
     // }
+=======
+    }
+>>>>>>> master
   }
 
   componentDidMount () {}
