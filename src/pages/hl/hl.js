@@ -6,6 +6,10 @@ import './hl.scss'
 
 class Hl extends Taro.Component {
 
+    config = {
+        navigationBarTitleText: '房贷计算'
+    }
+
     constructor(props){
         super(props)
         this.state = {
